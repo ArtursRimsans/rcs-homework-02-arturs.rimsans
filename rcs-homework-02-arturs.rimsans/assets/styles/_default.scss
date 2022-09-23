@@ -1,0 +1,32 @@
+body html {
+  height: 100vh;
+}
+
+.divColor {
+  background-color: black;
+  // border-radius: 5px;
+  //   border-style: solid;
+}
+
+// html,
+// body,
+img,
+h1,
+p,
+a,
+ul {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}

@@ -1,0 +1,160 @@
+$testcol: rgba(180, 180, 180, 0.616);
+$testcol2: rgba(180, 180, 180, 0.911);
+
+.wrapperBox {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  .header {
+    display: grid;
+    background-color: $testcol;
+    height: 20vh;
+    width: 100%;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    grid-template-columns: 2fr 7fr 3fr;
+    grid-template-areas: "brand nav tools";
+
+    .headerBrand {
+      grid-area: brand;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $testcol2;
+      width: 100%;
+      height: 10vh;
+      margin-top: 40px;
+    }
+
+    .headerNav {
+      grid-area: nav;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 99%;
+      background-color: $testcol2;
+      height: 10vh;
+      margin-top: 40px;
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+
+    .headerTools {
+      grid-area: tools;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: $testcol2;
+      width: 100%;
+      height: 10vh;
+      margin-top: 40px;
+
+      padding-right: 115px;
+      padding-left: 115px;
+    }
+  }
+
+  .hero {
+    display: grid;
+    background-color: $testcol;
+    margin-top: 10px;
+    padding-left: 10px;
+    height: 30vh;
+    width: 100%;
+    gap: 10px;
+    grid-template-columns: 6fr 3fr 3fr;
+    grid-template-areas: "heroFeature callToAction ad";
+
+    .heroFeature {
+      grid-area: heroFeature;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $testcol2;
+      width: 100%;
+      height: 20vh;
+      margin-top: 40px;
+    }
+    .heroCall {
+      grid-area: callToAction;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $testcol2;
+      width: 98%;
+      height: 20vh;
+      margin-top: 40px;
+    }
+    .Ad {
+      grid-area: ad;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $testcol;
+      height: 30vh;
+      width: 100%;
+    }
+  }
+
+  .body {
+    display: grid;
+    background-color: $testcol;
+    margin-top: 10px;
+    padding: 10px;
+    height: 60vh;
+    width: 100%;
+    gap: 10px;
+    grid-template-columns: 3fr 6fr 3fr;
+
+    grid-template-areas: "bodyArticleFeature bodyArticleListing bodySidebarArticleFeature";
+
+    .bodyArticleFeature {
+      grid-area: bodyArticleFeature;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $testcol2;
+      width: 100%;
+      height: 50vh;
+      margin-top: 40px;
+    }
+    .bodyArticleListing {
+      grid-area: bodyArticleListing;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $testcol2;
+      width: 100%;
+      height: 50vh;
+      margin-top: 40px;
+    }
+    .bodySidebarArticleFeature {
+      grid-area: bodySidebarArticleFeature;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $testcol2;
+      width: 100%;
+      height: 50vh;
+      margin-top: 40px;
+    }
+  }
+
+  .footer {
+    display: grid;
+    background-color: $testcol;
+    margin-top: 10px;
+    height: 10vh;
+    gap: 10px;
+    grid-template-columns: 12fr;
+    grid-template-areas: "footerItem";
+
+    .footerItem {
+      grid-area: footerItem;
+      background-color: $testcol2;
+    }
+  }
+}
